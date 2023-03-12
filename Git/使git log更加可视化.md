@@ -19,8 +19,11 @@ git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%
 - `%an`表示作者名字
 - `%d`表示引用名称，如上图中的`(HEAD -> master, origin/master, origin/HEAD)`
 - `%s`表示 subject，即`git commit -m "xxx"`中的`xxx`
+
 更多选项及设置参见[git-log](https://git-scm.com/docs/git-log)
+
 如果想更方便的使用上述命令，可以将其设置为别名`gitlog`
+
 ```bash
 alias gitlog="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"
 ```
