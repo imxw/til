@@ -1,7 +1,8 @@
 ---
-title: 为Metion配置Git同步
+title: 为 Metion 配置 Git 同步
 date: 2023-03-11 15:19
 ---
+# 为 Metion 配置 Git 同步
 Metion 是一款写作 APP，我之前一直将其当作写作入口来写博客。现在我开启了 TIL（Today I Learned）项目，自然也想使用它。因为Metion 支持 iOS 端、iPad 端及 Mac 端，写起笔记来很是方便，
 但也涉及到同步问题，可以使用 iCloud，但其并不稳定。我本来就将 TIL 项目放在 GitHub 上，所以最好是使用 Git。幸好， Metion 支持 Git。
 在配置 Git 过程中，我遇到了一个错误： `You're using an RSA key with SHA-1, which is no longer allowed. Please use a newer client or a different key type.`
