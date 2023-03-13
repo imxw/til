@@ -1,0 +1,97 @@
+---
+title: 浏览器基础
+date: 2023-03-13 10:31
+---
+## 浏览器对象
+网页是通过浏览器加载出来的，浏览器本身也有很多特性，如浏览器本身的版本信息，当前窗口大小，历史记录等。这些数据都是绑定在 window 对象上的。
+
+## 浏览器窗口大小
+
+window 的如下四个属性控制浏览器窗口的大小。
+- `innerWidth`: 页面视图的宽
+- `innerHeight`：页面视图的高
+- `outerWidth`：浏览器整个窗口的宽
+- `outerHeight`：浏览器整个窗口的高
+我们可以调整浏览器窗口的大小
+```js
+console.log('window inner size: ' + window.innerWidth + ' x ' + window.innerHeight);
+console.log('window outer size: ' + window.outerWidth + ' x ' + window.outerHeight);
+```
+
+## 浏览器信息
+浏览器的信息都存储在 navigator 对象上
+```js
+window.navigator
+// appCodeName: "Mozilla"
+// appName: "Netscape"
+// appVersion: "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
+// ...
+```
+常用属性包括
+- navigator.appName：浏览器名称；
+- navigator.appVersion：浏览器版本；
+- navigator.language：浏览器设置的语言；
+- navigator.platform：操作系统类型；
+- navigator.userAgent：浏览器设定的User-Agent字符串
+- navigator.userAgentData useragent相关信息, Object
+
+如何判断用户使用的是 pc 还是手机？
+`navigator.userAgentData.mobile`的值如果是`true`那么就是手机
+
+## 屏幕信息
+
+使用`window.screen`获取
+
+```js
+window.screen
+// Screen {availWidth: 2560, availHeight: 1440, width: 2560, height: 1440, colorDepth: 24, …}
+// availHeight: 1440
+// availLeft: 1440
+// availTop: 0
+// availWidth: 2560
+// colorDepth: 24
+// height: 1440
+// orientation: ScreenOrientation {angle: 0, type: 'landscape-primary', onchange: null}
+// pixelDepth: 24
+// width: 2560
+```
+## 当前访问的网址
+
+使用`window.location`获取
+
+```js
+window.location
+// Location
+// hash: ""
+// host: "www.baidu.com"
+// hostname: "www.baidu.com"
+// href: "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=..."
+// origin: "https://www.baidu.com"
+// pathname: "/s"
+// port: ""
+// protocol: "https:"
+// reload: ƒ reload()
+// replace: ƒ replace()
+// search: "?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=..."
+```
+
+常用属性如下：
+- location. protocol ; // 'http'
+- location.host; // 'www.example.com'
+- location.port; // '8080'
+- location.pathname; // '/path/index.html'
+- location.search; // '?a=1&b=2'
+- location. hash ; // 'TOP'
+
+加载新页面，使用`location.assign()`,重新加载当前页面使用`location.reload()`
+
+## 历史记录
+通过`history`对象操作
+
+```js
+// <- 浏览器的“后退”按钮
+history.back();
+
+// -> 浏览器的“前进”按钮
+history.forward()
+```
