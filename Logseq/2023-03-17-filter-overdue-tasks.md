@@ -1,0 +1,33 @@
+---
+title: 查询过期任务
+date: 2023-03-17 17:51
+---
+# 查询过期任务
+搜索距今超过一百八十天，状态为`TODO`、`DOING`，且未被 scheduled，优先级也不是 A 的任务
+## 高级查询
+
+```clojure
+#+BEGIN_QUERY
+{
+ :title [:h2 "🧨 OVERDUE"]
+ :query [
+         :find (pull ?b [*])
+         :in $ ?start ?today
+         :where
+         (between ?b ?start ?today)
+         (task ?b #{"TODO" "DOING"})
+         (not [?b :block/scheduled])
+         (not [?b :block/priority "A"])
+        ]
+ :inputs [:-180d :today]
+ :breadcrumb-show? true
+}
+#+END_QUERY
+```
+
+## 简单查询
+
+```clojure
+{{query (and (between -180d today) (task todo doing)(not (priority A)))}}
+```
+使用简单查询除了无法过滤是否 scheduled 外，其他需求基本能实现
