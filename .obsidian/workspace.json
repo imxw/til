@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "c63662570c9388f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e2bcd11091819fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c76eaea4cf37e73",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b19c77c95377b0c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d25e006e8da15f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ef2879760a1420f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "03e556afa2b2b5b9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c2b57ed4886f1bec",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 362.5
+  },
+  "right": {
+    "id": "fdcbb614f67bdf91",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e6f24e51582b7df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ede4ebf44557cba",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "85af2b86bf4210a9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4558a48bb565a174",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "de9c8c2840e46501",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "zk-prefixer:创建时间戳笔记": false
+    }
+  },
+  "active": "8c76eaea4cf37e73",
+  "lastOpenFiles": [
+    "cards/202304062258.md",
+    "cards/202303111519.md",
+    "cards/202303131751.md",
+    "cards",
+    "cards/202303142223.md",
+    "_image/2023-03-15/2023-03-15-22-02-16@2x.jpg.md",
+    "cards/202303152152.md",
+    "_image/2023-03-15",
+    "_image",
+    "cards/202303121131.md",
+    "cards/202303121822.md",
+    "cards/202303131027.md",
+    "cards/202303131031.md",
+    "cards/202303152234.md",
+    "cards/202303161919.md",
+    "cards/202303182125.md",
+    "cards/202303202048.md",
+    "cards/202303191956.md",
+    "_image/2023-03-15/2023-03-15-22-19-36@2x.jpg.md",
+    "_image/2023-03-14/2023-03-14-22-31-48@2x.png.md",
+    "_image/2023-03-14",
+    "images/20230315220216.jpg",
+    "images/20230314223130.png",
+    "images/20230315222828.jpg",
+    "images/20230315222101.jpg",
+    "images/20230315221936.jpg",
+    "images/20230315221426.jpg",
+    "HTML/_image/2023-03-15/2023-03-15-22-28-28.jpg",
+    "HTML/_image/2023-03-15/2023-03-15-22-21-01.jpg",
+    "HTML/_image/2023-03-15/2023-03-15-22-19-36.jpg",
+    "HTML/_image/2023-03-15/2023-03-15-22-14-26.jpg",
+    "2023-04-06.md",
+    "README.md",
+    "images"
+  ]
+}
